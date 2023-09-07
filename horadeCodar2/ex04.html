@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 4</title>
+    <script>
+      //4. Faça um programa que leia 3 valores informados pelo usuário (considere que não serão informados valores iguais) e escrever a soma dos 2 maiores.
+
+      // Pedir ao usuário para inserir três valores distintos
+      let valor1 = parseFloat(prompt("Informe o primeiro valor: "));
+      let valor2 = parseFloat(prompt("Informe o segundo valor: "));
+      let valor3 = parseFloat(prompt("Informe o terceiro valor: "));
+
+      // Iniciando as variáveis para os dois maiores valores
+      let maiorValor;
+      let segundoMaiorValor;
+
+      // Verificamos qual é o maior valor
+      if (valor1 > valor2 && valor1 > valor3) {
+        maiorValor = valor1;
+        // Verificamos qual é o segundo maior valor entre valor2 e valor3
+        segundoMaiorValor = valor2 > valor3 ? valor2 : valor3;
+        // utilizando o operador ternário: <condição> ? "Verdadeiro" : 'Falso';
+        // Na linha 23, o segundoMaiorValor recebe o valor2 ou 3, dependendo de qual é maior. Se valor2 for maior, segundoMaiorValor recebe ele.
+      } else if (valor2 > valor1 && valor2 > valor3) {
+        maiorValor = valor2;
+        // Verificamos qual é o segundo maior valor entre valor1 e valor3
+        segundoMaiorValor = valor1 > valor3 ? valor1 : valor3;
+      } else {
+        maiorValor = valor3;
+        // Verificamos qual é o segundo maior valor entre valor1 e valor2
+        segundoMaiorValor = valor1 > valor2 ? valor1 : valor2;
+      }
+
+      // Calculamos a soma dos dois maiores valores
+      let somaDosMaiores = maiorValor + segundoMaiorValor;
+
+      // Exibimos o resultado para o usuário
+      alert(`A soma dos 2 maiores valores é: ${somaDosMaiores}`);
+    </script>
+  </head>
+  <body></body>
+</html>

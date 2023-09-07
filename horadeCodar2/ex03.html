@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 3</title>
+    <script>
+      //3. Faça um programa para ler 3 valores (considere que não serão informados valores iguais) e escrever o maior deles.
+      let valor1 = Number.parseInt(prompt("Informe um valor: "));
+      let valor2 = Number.parseInt(prompt("Informe outro valor: "));
+      let valor3 = Number.parseInt(prompt("Informe outro valor: "));
+
+      if (valor1 > valor2 && valor1 > valor3) {
+        alert(`O valor ${valor1} é o maior.`);
+      } else if (valor2 > valor1 && valor2 > valor3) {
+        alert(`O valor ${valor2} é o maior.`);
+      } else if (valor3 > valor1 && valor3 > valor2) {
+        alert(`O valor ${valor3} é o maior.`);
+      } else {
+        alert(`Os números são iguais!`);
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
